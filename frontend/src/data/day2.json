@@ -1,0 +1,121 @@
+{
+  "day": 2,
+  "day_title": "The Climb Begins",
+  "scenes": [
+    { "id": "2.1", "title": "Morning Climbing Brief", "format": "Expedition Chat", "time": "08:00", "location": "Expedition Chat",
+      "messages": [
+        { "character": "arjun", "text": "Today we leave Base Camp and begin the real climb." },
+        { "character": "maya", "text": "Stay aware of your body and the altitude." },
+        { "character": "tenzin", "text": "Every step should be deliberate." },
+        { "character": "priya", "text": "We succeed as one team." }
+      ]
+    },
+    { "id": "2.2", "title": "Crossing the Khumbu Icefall", "format": "Icefall Route", "time": "09:30", "location": "Icefall Route",
+      "system_card": { "heading": "ROUTE · KHUMBU ICEFALL", "subheading": "Under guide supervision",
+        "body": "The team crosses ladders, crevasses and moving ice under guide supervision.",
+        "metrics": ["Ladders","Crevasses","Moving Ice","Guide Supervision"] },
+      "messages": [{ "character": "tenzin", "text": "This section demands full focus. How do we move?" }],
+      "decision": { "id": "D5", "label": "DECISION 5 — Icefall Crossing", "options": [
+        { "key": "A", "label": "Move quickly to save time.", "changes": { "expedition_progress": 5, "weather_risk": 4, "trust_tenzin": -4 },
+          "reaction": { "character": "tenzin",
+            "text": "Speed here isn't the priority. The ice doesn't forgive carelessness.",
+            "low": "No. Speed here gets people killed. I'll be leading the pace, not you.",
+            "high": "Speed isn't the priority here — I know you know that. Let's slow it down." } },
+        { "key": "B", "label": "Wait for others to cross first.", "changes": { "team_health": 3, "expedition_progress": -4 },
+          "reaction": { "character": "tenzin",
+            "text": "Caution is good, but we also have a schedule to hold.",
+            "low": "Overcautious. The schedule matters too.",
+            "high": "Cautious call — I get it. Just keep the schedule in mind with me." } },
+        { "key": "C", "label": "Maintain a steady pace while following safety procedures.", "changes": { "risk_management": 6, "trust_tenzin": 5 },
+          "reaction": { "character": "tenzin",
+            "text": "Exactly right. Steady and disciplined gets us through.",
+            "low": "Acceptable. Let's see it in practice, not just words.",
+            "high": "Exactly right. Steady and disciplined — you're moving like a Sherpa now." } }
+      ] }
+    },
+    { "id": "2.3", "title": "Weather Update", "format": "Weather Station", "time": "11:30", "location": "Weather Station",
+      "messages": [{ "character": "priya", "text": "Fresh forecasts indicate changing winds and colder temperatures." }],
+      "system_card_after": true,
+      "system_card": { "heading": "FEED · NEW ALERTS PUSHED", "subheading": "Weather & Route feed updated",
+        "body": "Two new items are now visible in the Weather & Route tab. Leadership, Risk Management and Expedition Progress will update based on the team's response through the rest of the day.",
+        "metrics": ["WX ALERT · Wind speeds up · MEDIUM","ROUTE · Icefall stable · LOW"] }
+    },
+    { "id": "2.4", "title": "Camp I Arrival", "format": "Camp I", "time": "13:00", "location": "Camp I",
+      "messages": [{ "character": "arjun", "text": "We've reached Camp I. What's our next move?" }],
+      "decision": { "id": "D6", "label": "DECISION 6 — Camp I Arrival", "options": [
+        { "key": "A", "label": "Continue climbing immediately.", "changes": { "summit_readiness": 4, "team_health": -6, "trust_maya": -4 },
+          "reaction": { "character": "maya",
+            "text": "We need this stop. Pushing past it now costs us later.",
+            "low": "No. Medical says we stop. I'm not signing off on that plan.",
+            "high": "I know you want to press — I do too — but we need this stop. Trust me on it." } },
+        { "key": "B", "label": "Rest longer than planned.", "changes": { "team_health": 4, "expedition_progress": -5 },
+          "reaction": { "character": "priya",
+            "text": "Rest is good, but the extra time affects our supply timeline.",
+            "low": "That will cost us. I need a revised timeline before I agree.",
+            "high": "Rest is smart — I appreciate it — but the supply timeline shifts. Let's talk it through." } },
+        { "key": "C", "label": "Follow the expedition schedule and recover properly.", "changes": { "decision_quality": 5, "trust_maya": 5 },
+          "reaction": { "character": "maya",
+            "text": "That's exactly the balance we need.",
+            "low": "Acceptable. Let's hope you hold that line tomorrow too.",
+            "high": "That's exactly the balance. Honestly, I'd sleep well tonight if this were always the call." } }
+      ] }
+    },
+    { "id": "2.5", "title": "Oxygen & Energy Management", "format": "High Camp Training", "time": "15:00", "location": "High Camp Training",
+      "messages": [{ "character": "priya", "text": "We need to plan resource use carefully from here. What's the approach?" }],
+      "decision": { "id": "D7", "label": "DECISION 7 — Resource Management", "options": [
+        { "key": "A", "label": "Conserve supplies for later.", "changes": { "risk_management": 4, "team_health": -3 },
+          "reaction": { "character": "priya",
+            "text": "Smart long-term thinking, but don't under-fuel the team now.",
+            "low": "Careful — under-fuelling the team is its own risk. I'll be watching intake.",
+            "high": "Smart thinking, honestly. Just don't let me see anyone under-fuelled tonight." } },
+        { "key": "B", "label": "Use resources freely.", "changes": { "team_health": 4, "summit_readiness": -5, "trust_priya": -4 },
+          "reaction": { "character": "priya",
+            "text": "That leaves us short for the summit push. We need a plan, not comfort.",
+            "low": "No. That plan doesn't survive tomorrow. I'll be rewriting the manifest tonight.",
+            "high": "I hear the intent — comfort now feels kind — but we can't fund the summit that way." } },
+        { "key": "C", "label": "Balance hydration, nutrition and oxygen according to the team's plan.", "changes": { "teamwork": 5, "trust_priya": 6 },
+          "reaction": { "character": "priya",
+            "text": "That's exactly the discipline this stage needs.",
+            "low": "Acceptable. Let's see whether the team actually holds to it.",
+            "high": "That's exactly it. You're running logistics the way I would." } }
+      ] }
+    },
+    { "id": "2.6", "title": "Evening Expedition Review", "format": "Camp Briefing", "time": "17:00", "location": "Camp Briefing",
+      "messages": [{ "character": "arjun", "text": "The expedition team reviews progress and identifies risks for the summit push. What's the biggest concern heading into tomorrow?" }],
+      "decision": { "id": "D8", "label": "DECISION 8 — Day 2 Debrief Call", "options": [
+        { "key": "A", "label": "The narrowing weather window.", "changes": { "leadership": 5, "weather_risk": 8 },
+          "reaction": { "character": "arjun",
+            "text": "Agreed. That window won't wait for us.",
+            "low": "Fine. I'll be watching whether you plan around it or just talk about it.",
+            "high": "Agreed. That's the risk I'm losing sleep over tonight too." } },
+        { "key": "B", "label": "The team's fatigue levels.", "changes": { "teamwork": 5, "team_health": -4 },
+          "reaction": { "character": "maya",
+            "text": "Good read. Fatigue is the quiet risk nobody talks about.",
+            "low": "A fair read. I'll expect to see you act on it, not just name it.",
+            "high": "That's a great read. Nobody talks about fatigue — thank you for naming it." } },
+        { "key": "C", "label": "Whether we're truly ready for the Hillary Step tomorrow.", "changes": { "decision_quality": 5, "summit_readiness": 8 },
+          "reaction": { "character": "tenzin",
+            "text": "That's the right question to be asking tonight.",
+            "low": "Acceptable question. The answer is what matters.",
+            "high": "That's the right question — and I'm glad it came from you." } }
+      ] }
+    }
+  ],
+  "reflection": { "id": "R2", "question": "Which moment today tested your judgment the most?", "options": [
+    { "key": "A", "label": "Crossing the Khumbu Icefall.",
+      "response": { "character": "tenzin",
+        "text": "That crossing tests everyone. You handled it with discipline.",
+        "low": "Reasonable answer. Discipline is what I'll be watching for.",
+        "high": "That crossing tests everyone — and you handled it like someone I'd rope with." } },
+    { "key": "B", "label": "Deciding how to manage our resources.",
+      "response": { "character": "priya",
+        "text": "That's the decision most people underestimate. Well spotted.",
+        "low": "A fair pick. Let's see if you handle it the same way tomorrow.",
+        "high": "That's the decision most people miss. I'm glad you saw it — really." } },
+    { "key": "C", "label": "Knowing when to rest versus when to push.",
+      "response": { "character": "maya",
+        "text": "That balance is the hardest lesson at altitude. You're learning it well.",
+        "low": "That balance is a lesson. Learn it faster.",
+        "high": "That balance is the hardest lesson at altitude. Honestly, you're getting it." } }
+  ] }
+}

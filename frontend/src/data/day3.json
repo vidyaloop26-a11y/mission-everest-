@@ -1,0 +1,129 @@
+{
+  "day": 3,
+  "day_title": "The Summit Push",
+  "scenes": [
+    { "id": "3.1", "title": "Summit Day Briefing", "format": "Expedition Chat", "time": "02:00", "location": "Expedition Chat",
+      "messages": [
+        { "character": "arjun", "text": "This is it. We move for the summit tonight." },
+        { "character": "tenzin", "text": "Every step counts from here. Follow my pace." },
+        { "character": "maya", "text": "Watch each other. Altitude affects judgment before it affects the body." },
+        { "character": "priya", "text": "The whole team back home is with you today." }
+      ]
+    },
+    { "id": "3.2", "title": "The Death Zone", "format": "Above Camp IV", "time": "03:30", "location": "Above Camp IV · 8,000 m+",
+      "system_card": { "heading": "ZONE · DEATH ZONE", "subheading": "Above 8,000 m — oxygen critically low",
+        "body": "The team enters the altitude zone above 8,000 m where oxygen is critically low.",
+        "metrics": ["Oxygen · Low","Judgment · Compromised","Margin · Narrow","Team · Roped"] },
+      "messages": [{ "character": "arjun", "text": "A teammate is showing early signs of altitude sickness. What do we do?" }],
+      "decision": { "id": "D9", "label": "DECISION 9 — Death Zone Judgment Call", "options": [
+        { "key": "A", "label": "Push on toward the summit — we're close.", "changes": { "summit_readiness": 4, "team_health": -8, "trust_maya": -6 },
+          "reaction": { "character": "maya",
+            "text": "That's exactly how emergencies turn fatal up here. We turn back for them, now.",
+            "low": "No. That call would kill someone. We turn back for them, now.",
+            "high": "I know how close we are — I really do — but that's how emergencies turn fatal. Please, turn back for them." } },
+        { "key": "B", "label": "Turn the entire team back immediately.", "changes": { "team_health": 5, "expedition_progress": -6, "trust_tenzin": -3 },
+          "reaction": { "character": "tenzin",
+            "text": "Caution is right, but let's assess before we give up the summit for everyone.",
+            "low": "Cautious. Let's actually assess before we throw away the summit for everyone.",
+            "high": "I respect the instinct — let's still assess before we give up the summit for everyone." } },
+        { "key": "C", "label": "Have Maya assess immediately and decide based on her read.", "changes": { "leadership": 6, "trust_maya": 6, "trust_arjun": 4 },
+          "reaction": { "character": "maya",
+            "text": "Thank you for trusting the medical call. That's exactly how this should work.",
+            "low": "Sensible. Let me actually do my job now.",
+            "high": "Thank you for trusting me on the medical call. Honestly, that's the leader I hoped you'd become." } }
+      ] }
+    },
+    { "id": "3.3", "title": "The Final Ridge", "format": "Summit Ridge", "time": "05:30", "location": "Summit Ridge",
+      "messages": [{ "character": "tenzin", "text": "This is the window we waited for. Stay close and steady." }],
+      "system_card_after": true,
+      "system_card": { "heading": "FEED · SUMMIT WINDOW OPEN", "subheading": "Weather & Route feed updated",
+        "body": "Two new items are visible in the Weather & Route tab.",
+        "metrics": ["WX ALERT · Winds calm, clear visibility · LOW","SUMMIT BULLETIN · Cleared to proceed · HIGH"] }
+    },
+    { "id": "3.4", "title": "Summit Decision", "format": "Near Summit", "time": "06:45", "location": "Near Summit",
+      "messages": [{ "character": "arjun", "text": "We're within reach, but the window is narrow. How do we make this final push?" }],
+      "decision": { "id": "D10", "label": "DECISION 10 — Final Summit Approach", "options": [
+        { "key": "A", "label": "Move as fast as possible to beat the window.", "changes": { "expedition_progress": 6, "weather_risk": 5, "trust_tenzin": -4 },
+          "reaction": { "character": "tenzin",
+            "text": "Rushing here risks everything we've built. Slow down.",
+            "low": "No. Rushing here throws away everything we've built. Slow down.",
+            "high": "I know — the window is there — but rushing risks everything we've built. Slow down." } },
+        { "key": "B", "label": "Hold position and reassess conditions again.", "changes": { "risk_management": 4, "expedition_progress": -5 },
+          "reaction": { "character": "arjun",
+            "text": "We've reassessed enough. This is the moment to commit.",
+            "low": "Enough reassessing. Make the call.",
+            "high": "I hear the caution — I respect it — but we've reassessed enough. Commit with me." } },
+        { "key": "C", "label": "Advance together at Tenzin's steady, disciplined pace.", "changes": { "leadership": 6, "teamwork": 6, "trust_tenzin": 6 },
+          "reaction": { "character": "tenzin",
+            "text": "That's how we reach the top. Together, and in control.",
+            "low": "Acceptable. Let's see if the team actually holds the pace.",
+            "high": "That's how we reach the top — together, in control. I'm proud to rope with you." } }
+      ] }
+    },
+    { "id": "3.5", "title": "Summit Reached", "format": "Everest Summit", "time": "07:30", "location": "Everest Summit · 8,848 m",
+      "messages": [
+        { "character": "arjun", "text": "We made it. Take a moment — you've earned it." },
+        { "character": "maya", "text": "Everyone is stable. That matters more than the summit itself." },
+        { "character": "tenzin", "text": "This is why we prepare the way we do." },
+        { "character": "priya", "text": "The whole team will want to hear this story." }
+      ]
+    },
+    { "id": "3.6", "title": "The Descent", "format": "Descent Route", "time": "09:00", "location": "Descent Route",
+      "messages": [{ "character": "arjun", "text": "The summit is only half the mission. How do we approach the descent?" }],
+      "decision": { "id": "D11", "label": "DECISION 11 — Descent Discipline", "options": [
+        { "key": "A", "label": "Descend quickly — the hard part is over.", "changes": { "team_health": -6, "trust_tenzin": -4 },
+          "reaction": { "character": "tenzin",
+            "text": "Most accidents happen on descent. The mission isn't over yet.",
+            "low": "No. Most accidents happen on descent. The mission is not over.",
+            "high": "I know it feels done — but most accidents happen on descent. Please, hold the pace." } },
+        { "key": "B", "label": "Rest extensively before descending.", "changes": { "team_health": 4, "expedition_progress": -4 },
+          "reaction": { "character": "priya",
+            "text": "Rest matters, but our supply window is also closing.",
+            "low": "Rest is fine. Our supply window isn't. I'll be watching the clock.",
+            "high": "Rest matters — I appreciate that — but our supply window is closing too." } },
+        { "key": "C", "label": "Descend carefully and deliberately, matching the team's pace.", "changes": { "decision_quality": 6, "trust_tenzin": 6 },
+          "reaction": { "character": "tenzin",
+            "text": "That's the discipline that gets everyone home safe.",
+            "low": "Acceptable. Discipline is what gets us home. Prove it.",
+            "high": "That's the discipline that brings everyone home. Honestly — well led." } }
+      ] }
+    },
+    { "id": "3.7", "title": "Mission Debrief", "format": "Expedition Chat", "time": "14:00", "location": "Expedition Chat",
+      "messages": [{ "character": "arjun", "text": "Mission complete. Before we close — what mattered most to you this week?" }],
+      "decision": { "id": "D12", "label": "DECISION 12 — Final Debrief Call", "options": [
+        { "key": "A", "label": "Learning to lead under pressure.", "changes": { "leadership": 8 },
+          "reaction": { "character": "arjun",
+            "text": "That's the core of this whole mission. Well earned.",
+            "low": "That's the core of it. Whether you actually led is a separate question.",
+            "high": "That's the core of the mission — and honestly, you earned every word of it." } },
+        { "key": "B", "label": "Learning to trust my team.", "changes": { "teamwork": 8 },
+          "reaction": { "character": "priya",
+            "text": "That's the lesson most people miss until it's too late. You got it early.",
+            "low": "A fair lesson. Most learners say it — few actually mean it.",
+            "high": "That's the lesson most people miss until it's too late. So glad you got it early." } },
+        { "key": "C", "label": "Learning to make hard calls with incomplete information.", "changes": { "decision_quality": 8 },
+          "reaction": { "character": "maya",
+            "text": "That's exactly what leadership at altitude demands.",
+            "low": "Correct enough. Making them well is a different skill.",
+            "high": "That's exactly what leadership at altitude demands. Well seen." } }
+      ] }
+    }
+  ],
+  "reflection": { "id": "R3", "question": "What will you carry forward from this expedition?", "options": [
+    { "key": "A", "label": "The importance of preparation.",
+      "response": { "character": "priya",
+        "text": "That's the foundation of everything we did. You saw it clearly.",
+        "low": "A reasonable takeaway. It's the foundation, if you actually apply it.",
+        "high": "That's the foundation of everything we did. Honestly — proud to have run logistics with you." } },
+    { "key": "B", "label": "The discipline to know when to slow down.",
+      "response": { "character": "tenzin",
+        "text": "That's the hardest lesson on this mountain. You learned it.",
+        "low": "That's a hard lesson. Whether you truly learned it — the next mountain will show.",
+        "high": "That's the hardest lesson on this mountain — and you learned it faster than most." } },
+    { "key": "C", "label": "That leadership means trusting the right people at the right moment.",
+      "response": { "character": "arjun",
+        "text": "That's exactly the leader this mission needed. Well done.",
+        "low": "That's a start. Whether you become that leader is up to you.",
+        "high": "That's exactly the leader this mission needed. Honestly — I'd rope with you again." } }
+  ] }
+}

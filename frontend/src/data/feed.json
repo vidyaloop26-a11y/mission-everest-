@@ -1,0 +1,176 @@
+{
+  "day1": [
+    {
+      "id": "F101",
+      "headline": "72-hour summit window opens Day 3, 04:00–11:00",
+      "category": "Weather Alert",
+      "priority": "HIGH",
+      "timestamp": "Day 1 · 08:15",
+      "detail": "Jet stream forecast to drop below 8,500 m. Narrow but usable window. Confidence: 72%."
+    },
+    {
+      "id": "F102",
+      "headline": "Icefall ladder section reinforced overnight",
+      "category": "Route Update",
+      "priority": "MEDIUM",
+      "timestamp": "Day 1 · 09:05",
+      "detail": "Icefall Doctors have secured 4 new ladders across the middle serac field. Passable for loaded climbers."
+    },
+    {
+      "id": "F103",
+      "headline": "Hydration targets raised — 4.5L per climber today",
+      "category": "Health Advisory",
+      "priority": "MEDIUM",
+      "timestamp": "Day 1 · 10:00",
+      "detail": "Base Camp humidity has dropped. Maya has increased fluid intake targets to reduce acclimatization stress."
+    },
+    {
+      "id": "F104",
+      "headline": "Oxygen cylinders inspected — all seals passing",
+      "category": "Supply Report",
+      "priority": "LOW",
+      "timestamp": "Day 1 · 11:30",
+      "detail": "12 of 12 summit-grade cylinders cleared. Regulator flow tested at 2L/min and 4L/min settings."
+    },
+    {
+      "id": "F105",
+      "headline": "Team resting heart rate stable across the roster",
+      "category": "Team Status",
+      "priority": "LOW",
+      "timestamp": "Day 1 · 13:45",
+      "detail": "All climbers registering within acclimatization band. Maya flagged one climber for a light-duty afternoon."
+    },
+    {
+      "id": "F106",
+      "headline": "High wind shear observed above Camp 3",
+      "category": "Weather Alert",
+      "priority": "HIGH",
+      "timestamp": "Day 1 · 15:20",
+      "detail": "Gusts reaching 92 km/h at 7,200 m. Movement above Camp 2 not advised until window opens."
+    },
+    {
+      "id": "F107",
+      "headline": "Camp 2 supply cache confirmed and sealed",
+      "category": "Supply Report",
+      "priority": "LOW",
+      "timestamp": "Day 1 · 16:00",
+      "detail": "Ration loads, stove fuel and spare rope drops verified. Priya's manifest matches inventory."
+    },
+    {
+      "id": "F108",
+      "headline": "Summit Bulletin: expedition on schedule for Day 3 push",
+      "category": "Summit Bulletin",
+      "priority": "MEDIUM",
+      "timestamp": "Day 1 · 16:45",
+      "detail": "Preparation phase complete. Team reports for Day 2 route commit and load carry."
+    }
+  ],
+  "day2": [
+    {
+      "id": "F201",
+      "headline": "Departure from Base Camp confirmed — Icefall push underway",
+      "category": "Team Status",
+      "priority": "LOW",
+      "timestamp": "Day 2 · 08:20",
+      "detail": "All roped teams cleared the schrund. Radio check on 149.55 MHz nominal."
+    },
+    {
+      "id": "F202",
+      "headline": "Icefall route conditions stable following morning crossing",
+      "category": "Route Update",
+      "priority": "LOW",
+      "timestamp": "Day 2 · 11:32",
+      "detail": "Fixed lines intact, ladder anchors holding. Downhill traffic scheduled after 14:00."
+    },
+    {
+      "id": "F203",
+      "headline": "Wind speeds increasing above Camp I. Temperature dropping.",
+      "category": "Weather Alert",
+      "priority": "MEDIUM",
+      "timestamp": "Day 2 · 11:34",
+      "detail": "Ridge winds forecast to touch 55–70 km/h through the evening. Wind chill dropping to −28°C at Camp I."
+    },
+    {
+      "id": "F204",
+      "headline": "Camp I established — hot meals and rest cycle initiated",
+      "category": "Team Status",
+      "priority": "LOW",
+      "timestamp": "Day 2 · 13:10",
+      "detail": "Six tents pitched. Maya running SpO₂ and pulse checks on all climbers before the rest block."
+    },
+    {
+      "id": "F205",
+      "headline": "Oxygen conservation protocol activated for high-camp training",
+      "category": "Supply Report",
+      "priority": "MEDIUM",
+      "timestamp": "Day 2 · 15:05",
+      "detail": "Priya reallocates two cylinders to summit reserve. Training regulators set to 1L/min for the drill."
+    },
+    {
+      "id": "F206",
+      "headline": "Hydration flags on two climbers — corrected before dinner",
+      "category": "Health Advisory",
+      "priority": "MEDIUM",
+      "timestamp": "Day 2 · 16:20",
+      "detail": "Maya intervened with an isotonic mix and rest rotation. Both climbers cleared for the Day 3 push."
+    },
+    {
+      "id": "F207",
+      "headline": "Summit Bulletin: Hillary Step assessment scheduled 03:30 tomorrow",
+      "category": "Summit Bulletin",
+      "priority": "HIGH",
+      "timestamp": "Day 2 · 17:15",
+      "detail": "Weather window still holding. Final go/no-go call moves to Arjun at 03:30 based on ridge wind readings."
+    }
+  ],
+  "day3": [
+    {
+      "id": "F301",
+      "headline": "Summit push cleared — team departing Camp IV",
+      "category": "Team Status",
+      "priority": "HIGH",
+      "timestamp": "Day 3 · 02:10",
+      "detail": "All climbers on supplemental O₂. Radios on 149.55 MHz. Turnaround call set for 11:00."
+    },
+    {
+      "id": "F302",
+      "headline": "Winds calm. Clear visibility above Camp IV.",
+      "category": "Weather Alert",
+      "priority": "LOW",
+      "timestamp": "Day 3 · 05:32",
+      "detail": "Ridge winds sub-20 km/h. Visibility unlimited. Summit conditions holding."
+    },
+    {
+      "id": "F303",
+      "headline": "Team cleared to proceed on final ridge.",
+      "category": "Summit Bulletin",
+      "priority": "HIGH",
+      "timestamp": "Day 3 · 05:34",
+      "detail": "Arjun confirms go for the Hillary Step and final ridge. Fixed lines checked."
+    },
+    {
+      "id": "F304",
+      "headline": "Summit reached — full team on top",
+      "category": "Summit Bulletin",
+      "priority": "HIGH",
+      "timestamp": "Day 3 · 07:31",
+      "detail": "All climbers stable and roped. Descent brief in 15 minutes."
+    },
+    {
+      "id": "F305",
+      "headline": "Descent underway — Hillary Step cleared",
+      "category": "Route Update",
+      "priority": "MEDIUM",
+      "timestamp": "Day 3 · 09:10",
+      "detail": "Rappels completed without incident. Team proceeding to South Col at a controlled pace."
+    },
+    {
+      "id": "F306",
+      "headline": "All climbers back at Camp II — expedition complete",
+      "category": "Team Status",
+      "priority": "LOW",
+      "timestamp": "Day 3 · 13:40",
+      "detail": "Maya reports all vitals nominal. Priya has closed out the summit manifest."
+    }
+  ]
+}

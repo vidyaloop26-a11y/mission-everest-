@@ -1,0 +1,38 @@
+{
+  "arjun": {
+    "id": "arjun",
+    "name": "Captain Arjun Singh",
+    "short": "Arjun",
+    "role": "Expedition Leader",
+    "initials": "AS",
+    "accent": "amber",
+    "voice": "confident, strategic, decisive"
+  },
+  "maya": {
+    "id": "maya",
+    "name": "Maya Sharma",
+    "short": "Maya",
+    "role": "Expedition Doctor",
+    "initials": "MS",
+    "accent": "rose",
+    "voice": "calm, observant, compassionate"
+  },
+  "tenzin": {
+    "id": "tenzin",
+    "name": "Tenzin Sherpa",
+    "short": "Tenzin",
+    "role": "Lead Sherpa & Route Specialist",
+    "initials": "TS",
+    "accent": "ice",
+    "voice": "practical, patient, direct"
+  },
+  "priya": {
+    "id": "priya",
+    "name": "Priya Nair",
+    "short": "Priya",
+    "role": "Logistics Coordinator",
+    "initials": "PN",
+    "accent": "violet",
+    "voice": "organized, friendly, detail-oriented"
+  }
+}

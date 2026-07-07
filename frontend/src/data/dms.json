@@ -1,0 +1,58 @@
+{
+  "day1": {
+    "arjun": [
+      { "from": "arjun", "text": "Welcome to Base Camp. Read the room today — every conversation is a data point.", "time": "D1 · 08:32" },
+      { "from": "arjun", "text": "Route call at 15:00. I want your read before I lock it in.", "time": "D1 · 10:10" },
+      { "from": "arjun", "text": "Good work at the debrief. Rest. Day 2 is longer.", "time": "D1 · 16:55" }
+    ],
+    "maya": [
+      { "from": "maya", "text": "Watch how you're breathing. Slow in, slow out. Even at Base Camp.", "time": "D1 · 09:12" },
+      { "from": "maya", "text": "Hydration log is on the medical tent clipboard if you're doing rounds later.", "time": "D1 · 13:20" },
+      { "from": "maya", "text": "Sleep well tonight. That's a medical order.", "time": "D1 · 17:00" }
+    ],
+    "tenzin": [
+      { "from": "tenzin", "text": "The mountain is old. We are guests. Move like one.", "time": "D1 · 11:05" },
+      { "from": "tenzin", "text": "Every kilo you carry, you also carry down. Remember that.", "time": "D1 · 11:22" }
+    ],
+    "priya": [
+      { "from": "priya", "text": "Adding you to the manifest as Coordinator — Junior Grade. Welcome to the team.", "time": "D1 · 08:40" },
+      { "from": "priya", "text": "Supply loads for Day 2 will be posted on the Feed by 06:00 tomorrow.", "time": "D1 · 16:05" }
+    ]
+  },
+  "day2": {
+    "arjun": [
+      { "from": "arjun", "text": "Base Camp behind us. From here, discipline decides how far we get.", "time": "D2 · 08:05" },
+      { "from": "arjun", "text": "Nice read at the debrief tonight. Sleep is a weapon — use it.", "time": "D2 · 17:20" }
+    ],
+    "maya": [
+      { "from": "maya", "text": "Watch for headaches at Camp I. Tell me. Don't tough it out.", "time": "D2 · 12:50" },
+      { "from": "maya", "text": "SpO₂ looked good on your check. You're adapting well.", "time": "D2 · 13:40" }
+    ],
+    "tenzin": [
+      { "from": "tenzin", "text": "The Icefall respects patience. Nothing else.", "time": "D2 · 09:15" },
+      { "from": "tenzin", "text": "Tomorrow is the summit push. Rest is the plan.", "time": "D2 · 17:35" }
+    ],
+    "priya": [
+      { "from": "priya", "text": "Oxygen manifest updated. Two cylinders moved to summit reserve.", "time": "D2 · 15:15" },
+      { "from": "priya", "text": "Radio check at 20:00. Comms hub tent, don't be late.", "time": "D2 · 18:00" }
+    ]
+  },
+  "day3": {
+    "arjun": [
+      { "from": "arjun", "text": "This is the day we've prepared for. Trust the process.", "time": "D3 · 02:05" },
+      { "from": "arjun", "text": "Summit is only halfway. Descent is where we finish the job.", "time": "D3 · 07:45" }
+    ],
+    "maya": [
+      { "from": "maya", "text": "Watch every teammate. Above 8,000 m, judgment goes before the body does.", "time": "D3 · 03:15" },
+      { "from": "maya", "text": "Everyone stable. That's the number that matters today.", "time": "D3 · 07:35" }
+    ],
+    "tenzin": [
+      { "from": "tenzin", "text": "One step, one breath. Match my pace.", "time": "D3 · 04:20" },
+      { "from": "tenzin", "text": "The mountain gave us a window. Now we bring the team home.", "time": "D3 · 09:05" }
+    ],
+    "priya": [
+      { "from": "priya", "text": "Comms will hold live through the summit push. I've got you.", "time": "D3 · 02:15" },
+      { "from": "priya", "text": "Debrief at 14:00. This one will feel different.", "time": "D3 · 13:00" }
+    ]
+  }
+}
